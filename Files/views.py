@@ -43,3 +43,30 @@ def shared_file(request):
     data_dict={'permission_object':permission_object}
     return render(request,"Files/shared_file.html")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def share(request,pk):
+#     if request.method == "POST":
+#         member_object=request.POST['username']
+#         member=Member.Objects.get(pk=member_object)
+#         permission_object=Permission.objects.create(file_object=file_object,
+#                                                     member_object=member_object,
+#                                                     )
+#         return HttpResponseRedirect(reverse('Files:shared_file'))
+#     return render(request, "Files/shared_file.html")

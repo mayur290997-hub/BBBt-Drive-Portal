@@ -87,7 +87,7 @@
                 </button>
               </div>
                 <div class="modal-body">
-                <form action="{% url 'Files:private_file' %}" method="POST">
+                <form action="{% url 'Files:private_file' acc.pk %}" method="POST">
                       <div class="form-group">
                               <label for="username"> username</label>
 
@@ -107,7 +107,7 @@
                               Close
                           </button>
                           <button 
-                              type="button"
+                              type="submit"
                               class="btn btn-primary">
                               share
                           </button>

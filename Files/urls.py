@@ -8,6 +8,6 @@ urlpatterns = [
     path('private_file',views.private_file,name="private_file"),
     path('public_file',views.public_file,name="public_file"),
     path('shared_file',views.shared_file,name="shared_file"),
-    
+    # path('share_submit/<int:pk>',views.share,name="share"),
 
 ]
