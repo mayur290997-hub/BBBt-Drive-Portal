@@ -87,7 +87,8 @@
                 </button>
               </div>
                 <div class="modal-body">
-                <form action="{% url 'Files:private_file' acc.pk %}" method="POST">
+                <form action="{% url 'Files:share_submit' acc.pk %}" method="POST">
+                {% csrf_token %}
                       <div class="form-group">
                               <label for="username"> username</label>
 
